@@ -23,6 +23,9 @@ spec:
   hub: gcr.io/gke-release/asm # {"$ref":"#/definitions/io.k8s.cli.setters.anthos.servicemesh.hub"}
   tag: 1.6.11-asm.1 # {"$ref":"#/definitions/io.k8s.cli.setters.anthos.servicemesh.tag"}
   components:
+    egressGateways:
+    - name: istio-egressgateway
+      enabled: true
     pilot:
       k8s:
         env:
